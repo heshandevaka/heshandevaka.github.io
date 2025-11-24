@@ -1,127 +1,287 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-76BLNR920M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-    
-  gtag('config', 'G-76BLNR920M');
-</script>
-<meta name="google-site-verification" content="C4r0SmjTG14-FQFEYkVnw9U84lnlNDHyqvHTIWR2Bsw">
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/">
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<link rel="icon" href="cty.png">
-<link rel="stylesheet" href="jemdoc.css" type="text/css">
-<title>Heshan Fernando</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heshan Fernando</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://raw.githubusercontent.com/heshandevaka/heshandevaka.github.io/main/images/image.jpg">
 </head>
-<body>
-<noscript>&lt;div class="statcounter"&gt;&lt;a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"&gt;&lt;img
-class="statcounter"
-src="https://c.statcounter.com/10867279/0/cab9fef6/1/"
-alt="Web Analytics"&gt;&lt;/a&gt;&lt;/div&gt;</noscript><table summary="Table for page layout." id="tlayout">
-<tbody><tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Menu</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-item"><a href="publications.html" class="current">Publications</a></div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Heshan Fernando</h1>
-</div>
-<table class="imgtable"><tbody><tr><td>
-<a href="https://heshandevaka.github.io/"><img src="image.jpg" alt="alt text" width="200px" height="200px"></a>&nbsp;</td>
-<td align="left">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-<p> <b>Heshan Fernando</b></p>  
-Ph.D. Student<br>
-<a href="https://www.ecse.rpi.edu/">Department of Electrical, Computer, and Systems Engineering</a> <br>
-<a href="http://www.rpi.edu/">Rensselaer Polytechnic Institute</a> <p></p>
+  <!-- HEADER -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-4xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-xl font-semibold text-gray-900">Heshan Fernando</h1>
 
- <br>
- E-mail: fernah@rpi.edu<br> 
- <p></p>
- 
-<p><a href="https://scholar.google.com/citations?hl=en&user=QOXlyxIAAAAJ&view_op=list_works&gmla=AJsN-F6xsphCz_rIDnwVVQ3xcJRmpolI3nKs1N4xXREVAjDsCqGh3l8pfEvPSx_JHGkn4kwQ7OnxfLPDR6hASMcUbWEXtNPZw9PPpSPnpBZ5IYvI-OCtE0I"> Google Scholar</a><br> 
-</p><p><a href=""></a><br>
-</p></td></tr></tbody></table>
-<p>  </p> 
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-4 text-sm">
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#education" class="hover:text-blue-600">Education</a>
+      <a href="#publications" class="hover:text-blue-600">Publications</a>
+      <a href="#experience" class="hover:text-blue-600">Professional Experience</a>
+    </nav>
 
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden flex items-center text-gray-700 hover:text-blue-600 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
 
-<h2>About me</h2>
-<p>My background is in Signal Processing and Deep learning</p>
-<p>My current research focuses on the theory and applications of <b>Optimization</b> and <b>Machine learning</b>.</p>
-<p>I am fortunate to be advised by <a href="https://www.ecse.rpi.edu/people/faculty/tianyi-chen">Prof. Tianyi Chen</a>.</p>  
-  
-  
-  
-<h2>Education</h2>
-<ul>
-<li><p> <a href="https://www.ecse.rpi.edu/"> Rensselaer Polytechnic Institute</a>, Troy, NY: Ph.D., Electrical Engineering, 2021 - </p>
-</li>
-<li> <p> <a href="https://uom.lk/"> University of Moratuwa</a>, Sri Lanka: B.Sc., Electronic and Telecommunication Engineering, 2014 - 2018</p>
-</li>
-</ul>
+  <!-- Mobile Dropdown -->
+  <div id="menu" class="hidden md:hidden bg-white border-t border-gray-200">
+    <nav class="flex flex-col space-y-2 p-4 text-sm">
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#education" class="hover:text-blue-600">Education</a>
+      <a href="#publications" class="hover:text-blue-600">Publications</a>
+      <a href="#experience" class="hover:text-blue-600">Professional Experience</a>
+    </nav>
+  </div>
+</header>
 
-<h2>Highlights</h2>
-<ul>
-  <li><p>
-    Oct 2024: A preprint of our work on multi-objective learning inspired efficient LLM post-training is available on Arxiv!
-  </p><ul>
-    <li><a href="https://arxiv.org/pdf/2410.15483">Mitigating Forgetting in LLM Supervised Fine-tuning and Preference Learning</a>.  </li> <p></p>
-  </ul>
-
-  <li><p>
-    Dec 2023: Our paper was accepted in the <b>2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</b>!:</p>
-  </p><ul>
-    <li><a href="https://ieeexplore.ieee.org/document/10446038">Variance Reduction Can Improve Trade-off In Multi-Objective Learning</a>.  </li> <p></p>
-  </ul>
-
-  <li><p>
-    Sep 2023: Our paper was accepted in the <b>2023 Conference on Neural Information Processing Systems (NeurIPS)</b>!:</p>
-  </p><ul>
-    <li><a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/ddcf34623ca2d63823b6d40e4d980580-Paper-Conference.pdf">Three-Way Trade-Off in Multi-Objective Learning: Optimization, Generalization and Conflict-Avoidance</a>.  </li> <p></p>
-  </ul>
-
-  <li><p>
-    May 2023: Presented our work at ICLR 2023! (<a href="https://iclr.cc/virtual/2023/poster/10995">presentation and slides</a>)</p>
-  </p>
- 
-<li><p>
-  Jan 2023: Our paper was accepted (notable-top-5%) in the <b>2023 International Conference on Learning Representations (ICLR)</b>!:</p>
-</p><ul>
-  <li><a href="https://openreview.net/pdf?id=dLAYGdKTi2">Mitigating Gradient Bias in Multi-objective Learning: A Provably Convergent Stochastic Approach</a>.  </li> <p></p>
-</ul>
-  <p>&nbsp; &nbsp; Another paper was accepted in the <b>2023 American Control Conference (ACC)</b>!:</p>
-  <ul>  <li><a href="https://arxiv.org/pdf/2209.12307.pdf">On the Stability Analysis of Open Federated Learning Systems</a>.</li> </ul>
- </li>
- <p></p>
-
-</ul>
-
-<div id="footer">
-<div id="footer-text">
-Page generated by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
-</div>
-</div>
-</td>
-</tr>
-<!-- Default Statcounter code for Tianyi Chen
-http://chentianyi1991.github.io/,
- https://chentianyi1991.github.io/index.html,
- https://ecse.rpi.ed -->
-<script type="text/javascript">
-var sc_project=10867279; 
-var sc_invisible=1; 
-var sc_security="cab9fef6"; 
+<!-- JS for toggling menu -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
 </script>
-<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async=""></script>
 
-<!-- End of Statcounter Code -->
-</tbody></table>
+  <!-- HERO -->
+<section class="max-w-4xl mx-auto text-center py-16">
+  <img src="https://raw.githubusercontent.com/heshandevaka/heshandevaka.github.io/main/images/image.jpg" alt="Profile" class="mx-auto rounded-full mb-4 w-32 h-32 object-cover shadow-lg" />
+  <h2 class="text-3xl font-semibold mb-2">Heshan Fernando</h2>
+  <p class="text-lg text-gray-600 mb-1">Ph.D. Candidate</p>
+  <p class="text-gray-600 mb-4">
+    Department of Electrical, Computer, and Systems Engineering,<br/>
+    School of Engineering,<br/>
+    Rensselaer Polytechnic Institute
+  </p>
+
+  <!-- Contact with image icons -->
+  <div class="flex flex-wrap justify-center items-center gap-4 text-gray-700 text-sm">
+    <a href="mailto:fernah@rpi.edu" class="flex items-center gap-2 hover:text-blue-600">
+      <img src="https://raw.githubusercontent.com/heshandevaka/heshandevaka.github.io/main/images/email.png" alt="Email" class="w-4 h-4">
+      fernah@rpi.edu
+    </a>
+
+    <a href="https://heshandevaka.github.io" target="_blank" class="flex items-center gap-2 hover:text-blue-600">
+      <img src="https://raw.githubusercontent.com/heshandevaka/heshandevaka.github.io/main/images/github.png" alt="GitHub" class="w-4 h-4">
+      GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/heshandevaka" target="_blank" class="flex items-center gap-2 hover:text-blue-600">
+      <img src="https://raw.githubusercontent.com/heshandevaka/heshandevaka.github.io/main/images/linkedin.png" alt="LinkedIn" class="w-4 h-4">
+      LinkedIn
+    </a>
+
+    <a href="https://scholar.google.com/citations?user=QOXlyxIAAAAJ&hl=en" target="_blank" class="flex items-center gap-2 hover:text-blue-600">
+      <img src="https://raw.githubusercontent.com/heshandevaka/heshandevaka.github.io/main/images/graduate-hat.png" alt="Google Scholar" class="w-4 h-4">
+      Google Scholar
+    </a>
+  </div>
+</section>
+
+  <!-- ABOUT -->
+<section id="about" class="bg-white py-12 shadow-sm">
+  <div class="max-w-4xl mx-auto px-4">
+    <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+    <p class="text-gray-700 leading-relaxed">
+      I am a Ph.D. Candidate in Electrical, Computer, and Systems Engineering at Rensselaer Polytechnic Institute, Troy, New York, advised by 
+      <a href="https://chen.tech.cornell.edu" target="_blank" class="text-blue-600 hover:underline">Prof. Tianyi Chen</a>. 
+      My research interests lie in multi-objective optimization (MOO), with applications in multi-task learning (MTL), multi-modal learning (MML), large language model (LLM) post-training, and reinforcement learning (RL).
+      I am passionate about designing principled optimization methods, advancing algorithmic theory, and developing efficient 
+      implementations that balance competing objectives in modern machine learning systems. My work aims to create robust, scalable 
+      solutions that address the increasingly complex trade-offs inherent in contemporary AI.
+    </p>
+    <p class="mt-4">
+      <a href="https://heshandevaka.github.io/Heshan_Fernando_CV.pdf" target="_blank" class="text-blue-600 hover:underline font-medium">
+        View My Resume →
+      </a>
+    </p>
+  </div>
+</section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-6">Education</h3>
+      <div class="space-y-4">
+        <div>
+          <h4 class="font-bold text-gray-900">Ph.D. in Electrical, Computer, and Systems Engineering</h4>
+          <p class="text-gray-700">Rensselaer Polytechnic Institute (Jan 2021 - Present)</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-900">B.Sc. (First Class Honors) in Electronic and Telecommunication Engineering</h4>
+          <p class="text-gray-700">University of Moratuwa, Sri Lanka (Jan 2015 - Dec 2018)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- PUBLICATIONS -->
+  <section id="publications" class="bg-white py-12 shadow-sm">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-6">Selected Publications</h3>
+      <div class="space-y-4">
+
+  <ol class="publication-list">
+    <li class="publication-item">
+      <span class="pub-authors">
+        <b>H. Fernando</b>, H. Shen, M. Liu, S. Chaudhury, K. Murugesan, and T. Chen.
+      </span>
+      <span class="pub-title">
+        “Mitigating Gradient Bias in Multi-objective Learning: A Provably Convergent Approach.”
+      </span>
+      <span class="pub-venue">
+        <em>International Conference on Learning Representations (ICLR)</em>, 2023.
+      </span>
+      <br>
+      <span class="pub-links">
+        [
+        <a href="https://openreview.net/pdf?id=dLAYGdKTi2" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Paper</a> |
+        <a href="https://iclr.cc/media/PosterPDFs/ICLR%202023/10995.png?t=1682609068.7663286" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Poster</a> |
+        <a href="https://iclr.cc/virtual/2023/poster/10995" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Presentation</a> |
+        <a href="https://github.com/median-research-group/LibMTL/blob/main/LibMTL/weighting/MoCo.py" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Code</a>
+        ]
+      </span>
+    </li>
+    <br>
+    <li class="publication-item">
+      <span class="pub-authors">
+        <b>H. Fernando</b>* , H. Shen* , P. Ram, Y. Zhou, H. Samulowitz, N. Baracaldo, and T. Chen.
+      </span>
+      <span class="pub-title">
+        “Understanding Forgetting in LLM Supervised Fine-Tuning and Preference Learning – A Convex Optimization Perspective.”
+      </span>
+      <span class="pub-venue">
+        <em>arXiv preprint</em>, 2024.
+      </span>
+      <br>
+      <span class="pub-links">
+        [
+        <a href="https://arxiv.org/pdf/2410.15483" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Paper</a> |
+        <a href="https://github.com/heshandevaka/XRIGHT" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Code</a>
+        ]
+      </span>
+    </li>
+    <br>
+    <li class="publication-item">
+      <span class="pub-authors">
+        <b>H. Fernando</b>, P. Ram, Y. Zhou, H. Samulowitz, N. Baracaldo, and T. Chen.
+      </span>
+      <span class="pub-title">
+        “Mitigating Modality Imbalance in Multi-modal Learning via Multi-objective Optimization.”
+      </span>
+      <span class="pub-venue">
+        <em>arXiv preprint</em>, 2025.
+      </span>
+      <br>
+      <span class="pub-links">
+        [
+        <a href="https://arxiv.org/pdf/2511.06686" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Paper</a> |
+        <a href="https://github.com/heshandevaka/MIMO" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Code</a>
+        ]
+      </span>
+    </li>
+    <br>
+    <li class="publication-item">
+      <span class="pub-authors">
+        L. Chen* , <b>H. Fernando</b>* , Y. Ying, and T. Chen.
+      </span>
+      <span class="pub-title">
+        “Three-way Trade-off in Multi-objective Learning: Optimization, Generalization and Conflict-avoidance.”
+      </span>
+      <span class="pub-venue">
+        <em>Advances in Neural Information Processing Systems 36 (NeurIPS)</em>, 2024.
+      </span>
+      <br>
+      <span class="pub-links">
+        [
+        <a href="https://openreview.net/pdf?id=yPkbdJxQ0o" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Paper</a> |
+        <a href="https://neurips.cc/media/PosterPDFs/NeurIPS%202023/69951.png?t=1704163575.3053682" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Poster</a> |
+        <a href="https://github.com/heshandevaka/Trade-Off-MOL" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Code</a>
+        ]
+      </span>
+    </li>
+    <br>
+    <li class="publication-item">
+      <span class="pub-authors">
+        <b>H. Fernando</b>, L. Chen, S. Lu, P.-Y. Chen, M. Liu, S. Chaudhury, K. Murugesan, G. Liu, M. Wang, and T. Chen.
+      </span>
+      <span class="pub-title">
+        “Variance Reduction Can Improve Trade-Off in Multi-Objective Learning.”
+      </span>
+      <span class="pub-venue">
+        <em>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, 2024.
+      </span>
+      <br>
+      <span class="pub-links">
+        [
+        <a href="https://ieeexplore.ieee.org/abstract/document/10446038" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Paper</a> |
+        <a href="https://github.com/heshandevaka/MoCo-plus" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Code</a>
+        ]
+      </span>
+    </li>
+  </ol>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-12">
+  <div class="max-w-4xl mx-auto px-4">
+    <h3 class="text-2xl font-semibold mb-6">Professional Experience</h3>
+    <div class="space-y-4">
+
+      <!-- Data Scientist Intern -->
+      <div>
+        <h4 class="font-bold text-gray-900">Data Scientist Intern</h4>
+        <div class="flex flex-wrap items-center text-gray-700 italic">
+          <span class="hover:text-blue-600">Amazon, New York, NY, USA</span>
+          <span class="ml-2 text-gray-700">(May 2025 – Aug 2025)</span>
+        </div>
+      </div>
+      <!-- Research Extern -->
+      <div>
+        <h4 class="font-bold text-gray-900">Research Extern</h4>
+        <div class="flex flex-wrap items-center text-gray-700 italic">
+          <span class="hover:text-blue-600">IBM Thomas J. Watson Research Center, NY, USA</span>
+          <span class="ml-2 text-gray-700">(May 2022 – Aug 2022)</span>
+      </div>
+      <br>
+      <!-- Lecturer on Contract -->
+      <div>
+        <h4 class="font-bold text-gray-900">Lecturer on Contract</h4>
+        <div class="flex flex-wrap items-center text-gray-700 italic">
+          <a href="https://uom.lk" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">
+            University of Moratuwa, Sri Lanka
+          </a>
+          <span class="ml-2 text-gray-700">(Jul 2019 – Dec 2020)</span>
+        </div>
+      </div>
+      <br>
+      <!-- Temporary Instructor -->
+      <div>
+        <h4 class="font-bold text-gray-900">Temporary Instructor</h4>
+        <div class="flex flex-wrap items-center text-gray-700 italic">
+          <a href="https://uom.lk" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">
+            University of Moratuwa, Sri Lanka
+          </a>
+          <span class="ml-2 text-gray-700">(Jan 2019 – Jul 2019)</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
-</body></html>
+  <!-- FOOTER -->
+  <footer class="bg-[#0a0a0a] text-gray-300 text-center py-4 mt-0 border-t border-gray-800">
+    <p>© 2025 Heshan Fernando. Built with ❤️ and hosted on GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
